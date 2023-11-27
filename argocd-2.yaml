@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alphav1
+kind: Application
+metadata:
+  name: argocd-2
+spec:
+  project: default
+  source:
+    repoURL:
+    path:
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
+  destination: 
+    server: 'https://kubernetes.default.svc'
+    namespace: argocd
