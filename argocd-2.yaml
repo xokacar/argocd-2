@@ -5,8 +5,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL:
-    path:
+    repoURL: https://github.com/xokacar/argocd-2
+    path: ./argocd-2-chart
     targetRevision: HEAD
     helm:
       valueFiles:
