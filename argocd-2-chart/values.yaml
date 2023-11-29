@@ -10,7 +10,7 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
-imagePullSecrets: []
+imagePullSecrets: [acr-credentials]
 nameOverride: "argocd-2-release"
 fullnameOverride: "argocd-2-chart"
 
